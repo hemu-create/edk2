@@ -17,6 +17,11 @@ WinMNvmeDxeEntryPoint (
   UINT32 cc;
   UINT32 csts;
 
+  if (WINM_NVME_BASE == 0) {
+    Print (L"WinM: NVMe base is not documented for M3; skipping probe\n");
+    return EFI_SUCCESS;
+  }
+
   cap_lo = MmioRead32 (WINM_NVME_BASE + NVME_REG_CAP);
   cap_hi = MmioRead32 (WINM_NVME_BASE + NVME_REG_CAP + 4);
   version = MmioRead32 (WINM_NVME_BASE + NVME_REG_VS);
