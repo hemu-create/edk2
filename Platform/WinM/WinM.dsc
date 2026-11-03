@@ -125,3 +125,6 @@
   ArmPlatformPkg/PeilessSec/PeilessSec.inf
 
   ArmPlatformPkg/Library/ArmMaliDp/ArmMaliDp.inf
+
+[Components]
+  Platform/WinM/WinMPlatformDxe/WinMPlatformDxe.inf

@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = WinMPlatformDxe
+  FILE_GUID                      = 11111111-2222-3333-4444-555555555555
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = WinMPlatformDxeEntryPoint
+
+[Sources]
+  WinMPlatformDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+
+[Depex]
+  TRUE
