@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = WinMAicDxe
+  FILE_GUID                      = 22222222-3333-4444-5555-666666666661
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = WinMAicDxeEntryPoint
+
+[Sources]
+  WinMAicDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+
+[Depex]
+  TRUE

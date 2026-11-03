@@ -128,3 +128,6 @@
 
 [Components]
   Platform/WinM/WinMPlatformDxe/WinMPlatformDxe.inf
+  Platform/WinM/WinMAicDxe/WinMAicDxe.inf
+  Platform/WinM/WinMDartDxe/WinMDartDxe.inf
+  Platform/WinM/WinMNvmeDxe/WinMNvmeDxe.inf
