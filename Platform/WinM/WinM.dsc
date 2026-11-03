@@ -27,7 +27,7 @@
 
 [BuildOptions]
   RELEASE_*_*_CC_FLAGS  = -D MDEPKG_NDEBUG
-  *_*_*_CC_FLAGS  = -D DISABLE_NEW_DEPRECATED_INTERFACES
+  *_*_*_CC_FLAGS  = -D DISABLE_NEW_DEPRECATED_INTERFACES -I$(WORKSPACE)/Platform/WinM/Include
 
 [PcdsFixedAtBuild]
   gArmTokenSpaceGuid.PcdFdBaseAddress|0x0

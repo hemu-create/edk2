@@ -2,6 +2,7 @@
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiLib.h>
 #include <Library/IoLib.h>
+#include "WinMRegisters.h"
 
 #define WINM_AIC_BASE  0x2D1000000ULL
 #define AIC_INFO       0x0004

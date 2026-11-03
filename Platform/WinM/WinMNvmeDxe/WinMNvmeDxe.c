@@ -2,6 +2,7 @@
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiLib.h>
 #include <Library/IoLib.h>
+#include "WinMRegisters.h"
 
 /*
  * Documented ANS2 NVMe MMIO base from the Apple Silicon device tree binding.

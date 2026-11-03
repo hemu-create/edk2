@@ -2,6 +2,7 @@
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiLib.h>
 #include <Library/IoLib.h>
+#include "WinMRegisters.h"
 
 #define WINM_DART_BASE 0x2FA808000ULL
 
