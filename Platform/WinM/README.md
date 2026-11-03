@@ -39,4 +39,6 @@ cd edk2
 build -a AARCH64 -t GCC5 -p Platform/WinM/AppleSilicon/WinMAppleSilicon.dsc
 ```
 
-The DSC/FDF are not present yet. Do not treat this tree as a working firmware.
+A buildable starting platform is now present at `Platform/WinM/WinM.dsc`. It currently
+uses the generic ArmPlatformPkg components as a bring-up baseline; Apple Silicon
+AIC, DART, NVMe, USB, and display drivers still need to replace those pieces.
